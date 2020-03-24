@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table class="table table-bordered table-condensed">
+        <thead>
+            <tr>
+                <th colspan="6">F_SALUD</th>
+            </tr>
+            <tr>
+                <th>#</th>
+                <th>NOMBRE</th>
+                <th>RENOMBRE</th>
+                <th>TIPO</th>
+                <th>FORMATO</th>
+                <th>PREGUNTA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td><!-- SERIE -->
+                <td>DIRECTORIO</td><!--NOMBRE-->
+                <td>ID_VIVIENDA</td><!--RENOMBRE-->
+                <td>CONTINUO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>Llave número único identificador de vivienda</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>2</td><!-- SERIE -->
+                <td>ORDEN</td><!--NOMBRE-->
+                <td>ID</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>Orden de la observación del periodo correspondiente</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>3</td><!-- SERIE -->
+                <td>NPCFP1</td><!--NOMBRE-->
+                <td>SEGURIDAD_SOCIAL_SI</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>1. ¿ ... está afiliado(a) ( cotizante o beneficiario(a)) a alguna entidad de seguridad social en salud? 1 Si 2 No 3 No sabe, no informa</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>4</td><!-- SERIE -->
+                <td>NPCFP2</td><!--NOMBRE-->
+                <td>SEGURIDAD_SOCIAL_REGIMEN</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>2. ¿A cuál de los siguientes regímenes de seguridad social en salud está afiliado(a) ... ? 1 Contributivo 2 Especial o de Excepción (Fuerzas militares y de policía, Ecopetrol, universidades públicas, magisterio 3 Subsidiado (EPS-S) 4 No sabe, no informa</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>6</td><!-- SERIE -->
+                <td>NPCFP7</td><!--NOMBRE-->
+                <td>PARTICIPA_PROMO_PREVE</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>6. ¿ ... ha participado en acciones de
+                    promoción de salud y prevención de la
+                    enfermedad realizadas por la entidad
+                    de seguridad social en salud a la que
+                    está afiliado(a)? 1 Si 2 No</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>8</td><!-- SERIE -->
+                <td>NPCFP13A</td><!--NOMBRE-->
+                <td>no_enfer_anual_medi_gene</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>14. Sin estar enfermo(a) y por
+                    prevención, ¿ ... por lo menos una vez
+                    al año, consulta? 1. Medicina general
+                    1 Si</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>9</td><!-- SERIE -->
+                <td>NPCFP13B</td><!--NOMBRE-->
+                <td>no_enfer_anual_medi_espe</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>14. Sin estar enfermo(a) y por
+                    prevención, ¿ ... por lo menos una vez
+                    al año, consulta? 2. Medicina
+                    especializada 1 Si</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>10</td><!-- SERIE -->
+                <td>NPCFP13D</td><!--NOMBRE-->
+                <td>no_enfer_anual_medi_alte</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>14. Sin estar enfermo(a) y por
+                    prevención, ¿ ... por lo menos una vez
+                    al año, consulta? 4. Medicina
+                    alternativa 1 Si</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>11</td><!-- SERIE -->
+                <td>NPCFP13E</td><!--NOMBRE-->
+                <td>no_enfer_anual_consu</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>14. Sin estar enfermo(a) y por
+                    prevención, ¿ ... por lo menos una vez
+                    al año, consulta? 5. Ninguna de las
+                    anteriores 2 Si</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>12</td><!-- SERIE -->
+                <td>NPCFP14B</td><!--NOMBRE-->
+                <td>target_diag_enfer_resp</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>15.A ... le han diagnosticado alguna
+                    de estas enfermedades o problemas
+                    de salud: 2. Enfermedades
+                    respiratorias, bronquitis, enfisema? 1
+                    Si 2 No</td><!--PREGUNTA-->
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table table-bordered table-condensed">
+        <thead>
+            <tr>
+                <th colspan="6">B_VIVIENDA_ENTORNO</th>
+            </tr>
+            <tr>
+                <th style="max-width: 5px;">#</th>
+                <th>NOMBRE</th>
+                <th>RENOMBRE</th>
+                <th>TIPO</th>
+                <th>FORMATO</th>
+                <th>PREGUNTA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td><!-- SERIE -->
+                <td>DIRECTORIO</td><!--NOMBRE-->
+                <td>ID_VIVIENDA</td><!--RENOMBRE-->
+                <td>CONTINUO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>Llave número único identificador de vivienda</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>2</td><!-- SERIE -->
+                <td>SECUENCIA</td><!--NOMBRE-->
+                <td>SECUENCIA</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>Identificador numérico de registro dentro de
+                    la tabla, para cada directorio.</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>3</td><!-- SERIE -->
+                <td>ORDEN</td><!--NOMBRE-->
+                <td>ORDEN</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>Orden de la observación del periodo
+                    correspondiente</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>4</td><!-- SERIE -->
+                <td>NVCBP8A</td><!--NOMBRE-->
+                <td>VIV_HUMEDAD</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>8. ¿La vivienda presenta: 1. Humedades en
+                    el techo o en las paredes? 1 Si 2 No 9 No
+                    sabe/ No responde</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>5</td><!-- SERIE -->
+                <td>NVCBP8B</td><!--NOMBRE-->
+                <td>VIV_GOTERAS</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>8. ¿La vivienda presenta: 2. Goteras en el
+                    techo? 1 Si 2 No 9 No sabe/ No responde</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>6</td><!-- SERIE -->
+                <td>NVCBP8D</td><!--NOMBRE-->
+                <td>VIV_FALLO_TUBERIAS</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>8. ¿La vivienda presenta: 4. Fallas en
+                    tuberías, cañerías o desagües? 1 Si 2 No 9
+                    No sabe/ No responde</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>7</td><!-- SERIE -->
+                <td>NVCBP8G</td><!--NOMBRE-->
+                <td>VIV_POCA_VENTILACION</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>8. ¿La vivienda presenta: 7. Escasa
+                    ventilación? 1 Si 2 No 9 No sabe/ No
+                    responde</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>8</td><!-- SERIE -->
+                <td>NVCBP8H</td><!--NOMBRE-->
+                <td>VIV_INUNDACION</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>8. ¿La vivienda presenta: 8. Inundación
+                    cuando llueve o cuando se crece el río? 1 Si
+                    2 No 9 No sabe/ No responde</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>9</td><!-- SERIE -->
+                <td>NVCBP10</td><!--NOMBRE-->
+                <td>VIV_TIPO</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>10. Tipo de vivienda: 1 Casa 2 Apartamento
+                    3 Cuarto (s) 4 Otro tipo de vivienda (carpa,
+                    tienda, vagón, embarcación, refugio natural,
+                    etc.).</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>10</td><!-- SERIE -->
+                <td>NVCBP11AA</td><!--NOMBRE-->
+                <td>VIV_ESTRATO</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>Estrato para tarifa: 0 Recibos sin estrato o
+                    el servicio es pirata 1 Estrato 1 2 Estrato 2
+                    3 Estrato 3 4 Estrato 4 5 Estrato 5 6 Estrato
+                    6 8 Planta eléctrica 9 No conoce el estrato o
+                    no cuenta con recibo de pago.</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>11</td><!-- SERIE -->
+                <td>NVCBP11B</td><!--NOMBRE-->
+                <td>VIV_ACUEDUCTO</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>11. ¿Con cuáles de los siguientes servicios
+                    públicos, privados o comunales cuenta la
+                    vivienda? 2. Acueducto 1 Si 2 No</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>12</td><!-- SERIE -->
+                <td>NVCBP11C</td><!--NOMBRE-->
+                <td>VIV_ALCANTARILLADO</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>11. ¿Con cuáles de los siguientes servicios
+                    públicos, privados o comunales cuenta la
+                    vivienda? 3. Alcantarillado 1 Si 2 No</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>13</td><!-- SERIE -->
+                <td>NVCBP11D</td><!--NOMBRE-->
+                <td>VIV_RECOLECCION_BASURA</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>11. ¿Con cuáles de los siguientes servicios
+                    públicos, privados o comunales cuenta la
+                    vivienda? 4. Recolección de basuras 1 Si 2
+                    No</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>14</td><!-- SERIE -->
+                <td>NVCBP12</td><!--NOMBRE-->
+                <td>VIV_MATERIAL_PARED</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>12. ¿Cuál es el material predominante de
+                    las paredes exteriores? 1 Bloque, ladrillo,
+                    piedra, madera pulida 2 Tapia pisada,
+                    adobe 3 Bahareque revocado 4 Bahareque
+                    sin revocar 5 Madera burda, tabla, tablón 6
+                    Material prefabricado 7 Guadua, caña,
+                    esterilla, otro vegetal 8 Zinc, tela, lona,
+                    cartón, latas, desechos, plástico 9 Sin
+                    paredes</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>15</td><!-- SERIE -->
+                <td>NVCBP13</td><!--NOMBRE-->
+                <td>VIV_MATERIAL_PISO</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>13. ¿Cuál es el material predominante de
+                    los pisos? 1 Alfombra o tapete de pared a
+                    pared 2 Madera pulida y lacada, parqué 3
+                    Mármol 4 Baldosa, vinilo, tableta, ladrillo,
+                    laminado o flotante 5 Madera burda, tabla o
+                    tablón, otro vegetal 6 Cemento, gravilla 7
+                    Tierra, arena</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>16</td><!-- SERIE -->
+                <td>NVCBP14A</td><!--NOMBRE-->
+                <td>VIV_CERCANIA_FABRICAS</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>14. La vivienda está cerca de: 1. Fábricas o
+                    industrias 1 Si 2 No</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>17</td><!-- SERIE -->
+                <td>NVCBP14B</td><!--NOMBRE-->
+                <td>VIV_CERCANIA_BOTADEROS</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>14. La vivienda está cerca de: 2. Basureros
+                    o botaderos de basuras 1 Si 2 No</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>18</td><!-- SERIE -->
+                <td>NVCBP14I</td><!--NOMBRE-->
+                <td>VIV_CERCANIA_CANO_AGUAS</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>14. La vivienda está cerca de: 9. Caños de
+                    aguas residuales 1 Si 2 No</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>19</td><!-- SERIE -->
+                <td>NVCBP15D</td><!--NOMBRE-->
+                <td>SECTOR_CONTAMINACION_AIRE</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>15. ¿Cuáles de los siguientes problemas
+                    presenta el sector donde está ubicada su
+                    vivienda? 4. Contaminación del aire 1 Si 2
+                    No</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>20</td><!-- SERIE -->
+                <td>NVCBP15E</td><!--NOMBRE-->
+                <td>SECTOR_MAL_OLOR</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>15. ¿Cuáles de los siguientes problemas
+                    presenta el sector donde está ubicada su
+                    vivienda? 5. Malos olores 1 Si 2 No</td><!--PREGUNTA-->
+            </tr>
+            <tr>
+                <td>21</td><!-- SERIE -->
+                <td>NVCBP15F</td><!--NOMBRE-->
+                <td>SECTOR_MAL_MANEJO_BASURAS</td><!--RENOMBRE-->
+                <td>DISCRETO</td><!--TIPO-->
+                <td>NUMERICO</td><!--FORMATO-->
+                <td>15. ¿Cuáles de los siguientes problemas
+                    presenta el sector donde está ubicada su
+                    vivienda? 6. Generación y manejo
+                    inadecuado de las basuras 1 Si 2 No</td><!--PREGUNTA-->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

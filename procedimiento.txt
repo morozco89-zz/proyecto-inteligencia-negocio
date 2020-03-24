@@ -1,0 +1,24 @@
+1. Seleccionamos 3 estimadores de clasificacion basicos (arboles de decision, k-nn y regresión logistica)
+2. Realizamos un split de los datos (80-20) para el entrenamiento y las pruebas
+3. Realizamos las predicciones con cada estimador en los datos de pruebas
+4. Calculamos para cada estimador:
+	- exactitud
+	- precision
+	- recall
+	- fpr
+	- f1
+5. Para aquellos estimadores que predigan un vector de probabilidades
+	- Análisis de variación del umbral de precisión
+	- Generamos curva de precisión (Precission-Recall Curve)
+	- Gráfica ROC-AUC
+6. Podemos generar un resumen de metricas de evaluación con la función evaluar_modelo del notebook "Evaluación en Python" 
+7. Regresión lineal interactivo por Coste
+--- Hasta Aquí ---
+8. Selección de otros modelos de clasificacion más estándares
+	- Random Forest
+	- Bayes?
+9. Generación de Pipelines
+10. Ensamblado de modelos
+11. Curvas de aprendizaje
+12. Seleccion de Variables
+13. Optimización de Hiperparámetros
